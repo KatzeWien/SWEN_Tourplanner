@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tourplanner"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Tour Planner" Height="450" Width="800">
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -20,13 +20,22 @@
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="20"/>
             </Grid.RowDefinitions>
-            <Label>Tour Planner</Label>
-            <Button Grid.Column="0" Grid.Row="1">File</Button>
-            <Button Grid.Column="1" Grid.Row="1">Edit</Button>
-            <Button Grid.Column="2" Grid.Row="1">Options</Button>
-            <Button Grid.Column="3" Grid.Row="1"></Button>
-            <Button Grid.Column="4" Grid.Row="1"></Button>
-            <Button Grid.Column="5" Grid.Row="1">Help</Button>
+            <Button Grid.Column="0">File</Button>
+            <Button Grid.Column="1">Edit</Button>
+            <Button Grid.Column="2">Options</Button>
+            <Button Grid.Column="3"></Button>
+            <Button Grid.Column="4"></Button>
+            <Button Grid.Column="5">Help</Button>
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Row="1" Grid.Column="0">Search</TextBox>
         </Grid>
     </Grid>
 </Window>
