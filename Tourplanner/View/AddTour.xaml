@@ -1,0 +1,29 @@
+﻿<Window x:Class="Tourplanner.View.AddTour"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tourplanner.View"
+        mc:Ignorable="d"
+        Title="AddTour" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Name"/>
+            <TextBox x:Name="Name"/>
+            <TextBlock Text="Description"/>
+            <TextBox x:Name="Description"/>
+            <TextBlock Text="From"/>
+            <TextBox x:Name="From"/>
+            <TextBlock Text="To"/>
+            <TextBox x:Name="To"/>
+            <TextBlock Text="Transport Type"/>
+            <TextBox x:Name="TransportType"/>
+            <!-- Fragen wegen Extended WPF Toolkit-->
+            <TextBlock Text="Tour Distance"/>
+            <TextBox x:Name="TourDistance"/>
+            <TextBlock Text="Estimated Time"/>
+            <TextBox x:Name="EstimatedTime"/>
+            <Button Click="addValuesBtn_Click">Submit</Button>
+        </StackPanel>
+    </Grid>
+</Window>

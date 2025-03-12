@@ -10,9 +10,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <local:navbar x:Name="Navbar" Grid.Row="0"/>
         <local:searchbar x:Name="Searchbar" Grid.Row="1"/>
-        
+        <local:TourManagment x:Name="TourManagement" Grid.Row="2"/>
     </Grid>
 </Window>
